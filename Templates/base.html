@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+    <title> {% block title %}{% endblock title  %}</title>
+</head>
+<body>
+    {% block body %}{% endblock body %}
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1133 840.16"><defs><style>.cls-1{font-size:186.96px;fill:#8ab92d;}.cls-1,.cls-3{font-family:FranklinGothic-Heavy, Franklin Gothic Heavy;font-weight:800;}.cls-2{letter-spacing:0.01em;}.cls-3{font-size:170.15px;}.cls-3,.cls-5{fill:#3fa671;}.cls-4,.cls-8{fill:none;stroke:red;}.cls-4,.cls-7,.cls-8{stroke-miterlimit:10;}.cls-4{stroke-width:2px;}.cls-6{fill:#8cc63f;}.cls-7,.cls-9{fill:#fff;}.cls-7{stroke:#fff;}</style></defs><text class="cls-1" transform="translate(0 782.83) scale(0.95 1)"><tspan class="cls-2">N</tspan><tspan x="129.72" y="0">utrition</tspan></text><text class="cls-3" transform="translate(747 782.82) scale(1.08 1)">Club</text><path class="cls-4" d="M571,634" transform="translate(-381 -88)"/><path class="cls-4" d="M799,254" transform="translate(-381 -88)"/><path class="cls-4" d="M778,172" transform="translate(-381 -88)"/><path class="cls-5" d="M951.5,298q31.37,166.13,64,332a44.37,44.37,0,0,0,30,40,286.28,286.28,0,0,0,196-15,52.66,52.66,0,0,0,16.5-16.5,53.24,53.24,0,0,0,8-29q-1-198-2-396a31.9,31.9,0,0,0-8-16c-9.26-9.85-21.71-10-24-10l-105,10q-3.49-34-7-68l85,4v-26c-50.23-3-87.67-4.46-99-4-2.29.09-6.69.39-10,3.5-4.69,4.41-4.4,11.89-4,15.5q2.51,38.5,5,77l-133,10a41.33,41.33,0,0,0-19,19c-8,16.74-1.07,32.65,0,35Z" transform="translate(-381 -88)"/><path class="cls-6" d="M796,196q3.81-15.3,8-31,3.93-14.73,8-29c-.33-2.33-.67-4.67-1-7l-83-9,6-32,98,13c.86,0,10,.8,15,9,5.24,8.52,1.31,17.34,1,18q-9.5,36-19,72l116,11c1.41.16,11.81,1.49,18,11,6.92,10.63,2.41,22,2,23L893.33,627.57Q892.16,633.8,891,640a55.82,55.82,0,0,1-6,11,60.43,60.43,0,0,1-9,10,64.09,64.09,0,0,1-15,10,330.49,330.49,0,0,1-82,10s-44.62-.22-106-22c-4.38-1.55-12.29-4.6-19-12-10.53-11.61-11-25.38-11-29q-1-201.49-2-403a25.81,25.81,0,0,1,28-27Z" transform="translate(-381 -88)"/><path class="cls-4" d="M742,584" transform="translate(-381 -88)"/><path class="cls-4" d="M769,656" transform="translate(-381 -88)"/><path class="cls-4" d="M777,656" transform="translate(-381 -88)"/><path class="cls-4" d="M786,670" transform="translate(-381 -88)"/><path class="cls-4" d="M785,629" transform="translate(-381 -88)"/><path class="cls-4" d="M693,666" transform="translate(-381 -88)"/><path class="cls-4" d="M740,163" transform="translate(-381 -88)"/><path class="cls-6" d="M445,639" transform="translate(-381 -88)"/><path class="cls-7" d="M671.5,217.5v84l213,13q-3.5,39-7,78a10.64,10.64,0,0,0,6,4c5.49,1.28,9.68-2.69,10-3q6.5-39.5,13-79h22q6.5-36,13-72a5.36,5.36,0,0,0-2-4,5,5,0,0,0-3-1Z" transform="translate(-381 -88)"/><path class="cls-8" d="M853.5,257.5" transform="translate(-381 -88)"/><path class="cls-8" d="M848.5,257.5" transform="translate(-381 -88)"/><path class="cls-8" d="M816.5,253.5" transform="translate(-381 -88)"/><circle class="cls-9" cx="504" cy="325" r="8"/><path class="cls-9" d="M975,243l11.73,72L1195,316l6.84,112c.09,5.67,5.05,9.74,9.78,9,4.53-.71,8-5.71,6.85-11q-1-55-2-110H1240V225a7.72,7.72,0,0,0-2-5c-2.26-2.37-6.24-2.85-9.77-1Z" transform="translate(-381 -88)"/><circle class="cls-9" cx="832.5" cy="362.5" r="8.5"/><path class="cls-9" d="M765,431c-3.89-5.47-3.1-12.36.5-15.5,4.29-3.74,13.22-2.7,17.5,4.5,8.42,9.6,74.41,82.26,179.5,77.5,89.81-4.07,144.81-61.81,155.5-73.5,4.44-9.61,14.08-12.34,18.5-9.5,3.75,2.4,5.26,9.77,2,17-6.11,10.07-59.82,95.31-164,106C892.05,546,810.44,504.4,765,431Z" transform="translate(-381 -88)"/></svg>
+            <span class="ml-3 text-xl"> Health & Lifestyle Improver </span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            
+            <a href="/EVent"class="mr-5 hover:text-gray-900">Events</a>
+            <a href="/"class="mr-5 hover:text-gray-900">Home</a>
+            
+            <a href="/contact"class="mr-5 hover:text-gray-900">Contact Us</a>
+            <a href="/payment"class="mr-5 hover:text-gray-900">Pay Now</a>
+            
+            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a href = "/team">Our Team</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+      </nav>
+    </body>
+    <hr>
+    <section class="text-gray-600 body-font">
+  
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About Us
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed">This the place where you can Contact us know about our team get hold of them and watch us as we make india more fit and healthy . As our family is continuously growing day by day we are very pleased to welcome you to our family hope that we achieve our common goal of Health First </p>
+        <div class="flex justify-center">
+         
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?fitness">
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-100 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-100 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                <span class="text-gray-500 text-sm">DESIGNER</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</html>
+<hr>
+
+<section class="text-gray-600 body-font ">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Achievements</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Disclaimer:These results are not typical individual results will vary</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/a.jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (1).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (2).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (3).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (4).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (6).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (7).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (8).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (9).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (10).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (11).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (12).jpg">
+            <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+    
+  
+  <div class="lg:w-1/3 sm:w-1/2 p-4">
+    <div class="flex relative">
+     <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="static/b (5).jpg">
+        <div class="px-40 py-absolute z-40 w-full border-4 border-gray-200 bg-white opacity-0 :opacity-100">
+           <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+   </div>
+ </section>
+       
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1133 840.16"><defs><style>.cls-4,.cls-8{fill:none;stroke:red;stroke-miterlimit:10}.cls-4{stroke-width:2px}.cls-6{fill:#8cc63f}.cls-9{fill:#fff}</style></defs><text transform="matrix(.95 0 0 1 0 782.83)" style="font-family:FranklinGothic-Heavy,Franklin Gothic Heavy;font-weight:800;font-size:186.96px;fill:#8ab92d"><tspan style="letter-spacing:.01em">N</tspan><tspan x="129.72" y="0">utrition</tspan></text><text transform="matrix(1.08 0 0 1 747 782.82)" style="fill:#3fa671;font-size:170.15px;font-family:FranklinGothic-Heavy,Franklin Gothic Heavy;font-weight:800">Club</text><path d="M951.5 298q31.37 166.13 64 332a44.37 44.37 0 0 0 30 40 286.28 286.28 0 0 0 196-15 52.66 52.66 0 0 0 16.5-16.5 53.24 53.24 0 0 0 8-29l-2-396a31.9 31.9 0 0 0-8-16c-9.26-9.85-21.71-10-24-10l-105 10q-3.49-34-7-68l85 4v-26c-50.23-3-87.67-4.46-99-4-2.29.09-6.69.39-10 3.5-4.69 4.41-4.4 11.89-4 15.5q2.51 38.5 5 77l-133 10a41.33 41.33 0 0 0-19 19c-8 16.74-1.07 32.65 0 35Z" transform="translate(-381 -88)" style="fill:#3fa671"/><path class="cls-6" d="M796 196q3.81-15.3 8-31 3.93-14.73 8-29c-.33-2.33-.67-4.67-1-7l-83-9 6-32 98 13c.86 0 10 .8 15 9 5.24 8.52 1.31 17.34 1 18l-19 72 116 11c1.41.16 11.81 1.49 18 11 6.92 10.63 2.41 22 2 23l-71.67 382.57Q892.16 633.8 891 640a55.82 55.82 0 0 1-6 11 60.43 60.43 0 0 1-9 10 64.09 64.09 0 0 1-15 10 330.49 330.49 0 0 1-82 10s-44.62-.22-106-22c-4.38-1.55-12.29-4.6-19-12-10.53-11.61-11-25.38-11-29l-2-403a25.81 25.81 0 0 1 28-27Z" transform="translate(-381 -88)"/><path d="M671.5 217.5v84l213 13-7 78a10.64 10.64 0 0 0 6 4c5.49 1.28 9.68-2.69 10-3l13-79h22l13-72a5.36 5.36 0 0 0-2-4 5 5 0 0 0-3-1Z" transform="translate(-381 -88)" style="stroke:#fff;fill:#fff;stroke-miterlimit:10"/><circle class="cls-9" cx="504" cy="325" r="8"/><path class="cls-9" d="m975 243 11.73 72 208.27 1 6.84 112c.09 5.67 5.05 9.74 9.78 9 4.53-.71 8-5.71 6.85-11l-2-110H1240v-91a7.72 7.72 0 0 0-2-5c-2.26-2.37-6.24-2.85-9.77-1Z" transform="translate(-381 -88)"/><circle class="cls-9" cx="832.5" cy="362.5" r="8.5"/><path class="cls-9" d="M765 431c-3.89-5.47-3.1-12.36.5-15.5 4.29-3.74 13.22-2.7 17.5 4.5 8.42 9.6 74.41 82.26 179.5 77.5 89.81-4.07 144.81-61.81 155.5-73.5 4.44-9.61 14.08-12.34 18.5-9.5 3.75 2.4 5.26 9.77 2 17-6.11 10.07-59.82 95.31-164 106C892.05 546 810.44 504.4 765 431Z" transform="translate(-381 -88)"/>
+       </svg>
+        
+        
+        <span class="ml-3 text-xl">Health & Lifestyle Improver</span>
+        
+        
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+ 
