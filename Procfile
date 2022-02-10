@@ -1,1 +1,1 @@
-web: gunicorn Herbal_Life.wsgi 
+web: gunicorn web.wsgi
