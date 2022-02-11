@@ -27,7 +27,7 @@ SECRET_KEY = 'l1=be1mr^h(vp26o6(f^b39a4@nk-l$^43ei+ak0g8_%rki-x+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['healthandlifestyle.herokuapp.com']
+ALLOWED_HOSTS = ['healthandlifestyle.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
