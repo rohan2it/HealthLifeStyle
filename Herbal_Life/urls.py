@@ -19,5 +19,7 @@ urlpatterns = [
     path("contact",views.contact,name = "contact"),
     path("payment",views.payment,name = "payment"),
     #path('handlerequest',views.handlerequest,name='handlerequest'),
-    path('team',views.team,name = 'Our Team')
+    path('team',views.team,name = 'Our Team'),
+    path('getaway', views.getaway,name = 'getaway')
+    
 ]

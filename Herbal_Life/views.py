@@ -122,5 +122,6 @@ def eVent(request) :
 
 def team(request) :
     return render (request,'team.html')
-
+def getaway(request):
+    return render (request,'getaway.html')
 # Create your views here.
