@@ -74,7 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'web.wsgi.application'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -126,7 +126,7 @@ USE_TZ = True
 #added manually
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),

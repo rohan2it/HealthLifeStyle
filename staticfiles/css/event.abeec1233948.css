@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.events-section
+{   
+    width: 100%;
+    height: 100vh;
+    background: url("../img/cc.c00ba90f6cba.jpg");
+    background-size: cover;
+}
+.events-section .leftbox
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.events-section .content
+{
+    color: lightyellow;
+    background:border-box;
+    padding: 40px;
+    transition: .5s;
+}
+.events-section .content h1
+{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    
+}
+.events-section .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.events-section .content:hover
+{
+    background: crimson;
+}
+.events-section .events
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    float: right;
+    box-sizing: border-box;
+    margin: 0;
+}
+.events-section  .events ul
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+.events-section  .events li
+{   
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+
+}
+.events-section  .time
+{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+.events-section  .time:hover
+{
+    background: crimson;
+}
+.events-section  .time h2
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+.events-section  .time span
+{
+    font-size: 30px;
+
+}
+.events-section   .details
+{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.events-section   .details h3
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+
+}
+.events-section   .details p
+{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+
+}
+.events-section   .details a
+{
+    display: inline-block;
+    text-decoration: none;
+    
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+    
+}
+.events-section   .details a:hover
+{
+    background:crimson;
+    color: #fff;
+    border-color: crimson;
+}
+@media (max-width:991px)
+{
+    .events-section
+    {
+        height: 100vh;
+        background-position: center;
+
+    }
+    .events-section .leftbox
+    {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    .events-section  .events
+    {
+        
+        width: 100%;
+        height: auto;
+        background: transparent;
+        float: none;
+        box-sizing: border-box;
+    }
+    .events-section .content
+    {
+        padding: 20px;
+    }
+    .events-section .content h1
+    {
+        font-size: 30px;
+    }
+    .events-section .events ul
+    {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+
+    }
+    .events-section .events li
+    {
+        height: auto;
+        background: rgba(255,255,255,.8);
+    }
+    .events-section .time
+    {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+
+    }
+    .events-section .time h2
+    {
+        font-size: 30px;
+        line-height: 24px;
+
+    }
+    .events-section .time span
+    {
+        font-size: 20px;
+    }
+    .events-section .details
+    {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+    .events-section .details a
+    {
+        padding: 5px 10px;
+    }
+}
