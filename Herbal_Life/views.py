@@ -124,4 +124,9 @@ def team(request) :
     return render (request,'team.html')
 def getaway(request):
     return render (request,'getaway.html')
+
+def online(request):
+    return render (request,'online.html')
+def offline (request):
+    return render (request,'offline.html')    
 # Create your views here.

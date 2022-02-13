@@ -20,6 +20,8 @@ urlpatterns = [
     path("payment",views.payment,name = "payment"),
     #path('handlerequest',views.handlerequest,name='handlerequest'),
     path('team',views.team,name = 'Our Team'),
-    path('getaway', views.getaway,name = 'getaway')
+    path('getaway', views.getaway,name = 'getaway'),
+    path('offline', views.offline , name = 'offline events'),
+    path('online',views.online,name = 'offline events')
     
 ]
