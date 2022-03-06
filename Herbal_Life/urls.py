@@ -22,6 +22,8 @@ urlpatterns = [
     path('team',views.team,name = 'Our Team'),
     path('getaway', views.getaway,name = 'getaway'),
     path('offline', views.offline , name = 'offline events'),
-    path('online',views.online,name = 'offline events')
+    path('online',views.online,name = 'offline events'),
+    path('weight_loss',views.weight_loss,name="weight loss"),
+    path('weight_gain',views.weight_gain,name="weight gain")
     
 ]

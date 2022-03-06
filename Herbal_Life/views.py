@@ -128,5 +128,9 @@ def getaway(request):
 def online(request):
     return render (request,'online.html')
 def offline (request):
-    return render (request,'offline.html')    
+    return render (request,'offline.html')
+def weight_loss (request):
+    return render (request,'weight_loss.html')
+def weight_gain (request):
+    return render (request,'weight_gain.html')                    
 # Create your views here.
